@@ -24,41 +24,64 @@ class MyApp extends StatelessWidget {
                   barrierDismissible: false,
                   builder: (BuildContext context) {
                     return AlertDialog(
-                      title: Text('Registrarse'),
-                      content: Container(
-                        width: 300,
-                        child: Column(
-                          mainAxisSize: MainAxisSize.min,
-                          children: [
-                            TextField(
-                              decoration: InputDecoration(labelText: 'Usuario'),
+                      backgroundColor: Colors.pink, // Cambio de color del fondo
+                      content: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Text(
+                            'Registrarse',
+                            style: TextStyle(
+                              color: Colors.white, // Cambio de color del texto
+                              fontSize: 20,
                             ),
-                            SizedBox(height: 10),
-                            TextField(
-                              decoration: InputDecoration(labelText: 'Correo'),
+                          ),
+                          SizedBox(height: 20),
+                          TextField(
+                            decoration: InputDecoration(
+                              labelText: 'Usuario',
+                              filled: true,
+                              fillColor: Colors
+                                  .white, // Cambio de color del fondo del campo de texto
                             ),
-                            SizedBox(height: 10),
-                            TextField(
-                              decoration: InputDecoration(
-                                  labelText: 'Número de Teléfono'),
+                          ),
+                          SizedBox(height: 10),
+                          TextField(
+                            decoration: InputDecoration(
+                              labelText: 'Correo',
+                              filled: true,
+                              fillColor: Colors
+                                  .white, // Cambio de color del fondo del campo de texto
                             ),
-                            SizedBox(height: 10),
-                            TextField(
-                              decoration:
-                                  InputDecoration(labelText: 'Contraseña'),
-                              obscureText: true,
+                          ),
+                          SizedBox(height: 10),
+                          TextField(
+                            decoration: InputDecoration(
+                              labelText: 'Número de Teléfono',
+                              filled: true,
+                              fillColor: Colors
+                                  .white, // Cambio de color del fondo del campo de texto
                             ),
-                          ],
-                        ),
+                          ),
+                          SizedBox(height: 10),
+                          TextField(
+                            decoration: InputDecoration(
+                              labelText: 'Contraseña',
+                              filled: true,
+                              fillColor: Colors
+                                  .white, // Cambio de color del fondo del campo de texto
+                            ),
+                            obscureText: true,
+                          ),
+                          SizedBox(height: 20),
+                          ElevatedButton(
+                            onPressed: () {
+                              // Agrega la lógica para guardar los datos
+                              Navigator.of(context).pop();
+                            },
+                            child: Text('Guardar'),
+                          ),
+                        ],
                       ),
-                      actions: <Widget>[
-                        TextButton(
-                          child: Text('Guardar'),
-                          onPressed: () {
-                            Navigator.of(context).pop();
-                          },
-                        ),
-                      ],
                     );
                   },
                 );
@@ -73,32 +96,46 @@ class MyApp extends StatelessWidget {
                   barrierDismissible: false,
                   builder: (BuildContext context) {
                     return AlertDialog(
-                      title: Text('Inicio de Sesión'),
-                      content: Container(
-                        width: 300,
-                        child: Column(
-                          mainAxisSize: MainAxisSize.min,
-                          children: [
-                            TextField(
-                              decoration: InputDecoration(labelText: 'Usuario'),
+                      backgroundColor: Colors.blue, // Cambio de color del fondo
+                      content: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Text(
+                            'Inicio de Sesión',
+                            style: TextStyle(
+                              color: Colors.white, // Cambio de color del texto
+                              fontSize: 20,
                             ),
-                            SizedBox(height: 10),
-                            TextField(
-                              decoration:
-                                  InputDecoration(labelText: 'Contraseña'),
-                              obscureText: true,
+                          ),
+                          SizedBox(height: 20),
+                          TextField(
+                            decoration: InputDecoration(
+                              labelText: 'Usuario',
+                              filled: true,
+                              fillColor: Colors
+                                  .white, // Cambio de color del fondo del campo de texto
                             ),
-                          ],
-                        ),
+                          ),
+                          SizedBox(height: 10),
+                          TextField(
+                            decoration: InputDecoration(
+                              labelText: 'Contraseña',
+                              filled: true,
+                              fillColor: Colors
+                                  .white, // Cambio de color del fondo del campo de texto
+                            ),
+                            obscureText: true,
+                          ),
+                          SizedBox(height: 20),
+                          ElevatedButton(
+                            onPressed: () {
+                              // Agrega la lógica para guardar los datos
+                              Navigator.of(context).pop();
+                            },
+                            child: Text('Guardar'),
+                          ),
+                        ],
                       ),
-                      actions: <Widget>[
-                        TextButton(
-                          child: Text('Guardar'),
-                          onPressed: () {
-                            Navigator.of(context).pop();
-                          },
-                        ),
-                      ],
                     );
                   },
                 );

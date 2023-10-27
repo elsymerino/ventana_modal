@@ -32,9 +32,7 @@ class MyApp extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.end,
                             children: [
                               IconButton(
-                                icon: Icon(Icons.close,
-                                    color: Colors
-                                        .black), // Cambio de color del icono
+                                icon: Icon(Icons.close, color: Colors.white),
                                 onPressed: () {
                                   Navigator.of(context).pop();
                                 },
@@ -44,7 +42,7 @@ class MyApp extends StatelessWidget {
                           Text(
                             'Registrarse',
                             style: TextStyle(
-                              color: Colors.black, // Cambio de color del texto
+                              color: Colors.white, // Cambio de color del texto
                               fontSize: 20,
                             ),
                           ),
@@ -91,14 +89,7 @@ class MyApp extends StatelessWidget {
                               // Agrega la lógica para guardar los datos
                               Navigator.of(context).pop();
                             },
-                            style: ElevatedButton.styleFrom(
-                              primary:
-                                  Colors.black, // Cambio de color del botón
-                            ),
-                            child: Text('Guardar',
-                                style: TextStyle(
-                                    color: Colors
-                                        .white)), // Cambio de color del texto
+                            child: Text('Guardar'),
                           ),
                         ],
                       ),
@@ -106,12 +97,7 @@ class MyApp extends StatelessWidget {
                   },
                 );
               },
-              style: ElevatedButton.styleFrom(
-                primary: Colors.black, // Cambio de color del botón
-              ),
-              child: Text('Registrarse',
-                  style: TextStyle(
-                      color: Colors.white)), // Cambio de color del texto
+              child: Text('Registrarse'),
             ),
             SizedBox(height: 20),
             ElevatedButton(
@@ -129,9 +115,7 @@ class MyApp extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.end,
                             children: [
                               IconButton(
-                                icon: Icon(Icons.close,
-                                    color: Colors
-                                        .black), // Cambio de color del icono
+                                icon: Icon(Icons.close, color: Colors.white),
                                 onPressed: () {
                                   Navigator.of(context).pop();
                                 },
@@ -141,7 +125,7 @@ class MyApp extends StatelessWidget {
                           Text(
                             'Inicio de Sesión',
                             style: TextStyle(
-                              color: Colors.black, // Cambio de color del texto
+                              color: Colors.white, // Cambio de color del texto
                               fontSize: 20,
                             ),
                           ),
@@ -170,14 +154,7 @@ class MyApp extends StatelessWidget {
                               // Agrega la lógica para guardar los datos
                               Navigator.of(context).pop();
                             },
-                            style: ElevatedButton.styleFrom(
-                              primary:
-                                  Colors.black, // Cambio de color del botón
-                            ),
-                            child: Text('Guardar',
-                                style: TextStyle(
-                                    color: Colors
-                                        .white)), // Cambio de color del texto
+                            child: Text('Guardar'),
                           ),
                         ],
                       ),
@@ -185,12 +162,7 @@ class MyApp extends StatelessWidget {
                   },
                 );
               },
-              style: ElevatedButton.styleFrom(
-                primary: Colors.black, // Cambio de color del botón
-              ),
-              child: Text('Iniciar Sesión',
-                  style: TextStyle(
-                      color: Colors.white)), // Cambio de color del texto
+              child: Text('Iniciar Sesión'),
             ),
           ],
         ),
